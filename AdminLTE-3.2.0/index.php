@@ -177,7 +177,31 @@ if(isset($_POST['Excluir'])){
             <a href="index.php" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-              <strong>Cadastrar Pedidos</strong>
+              <strong>Cadastrar Produtos</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexclass.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Cadastrar Classes</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexalt.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Alterar Produtos</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexexc.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Excluir Produtos</strong>
               </p>
             </a>
           </li>
@@ -224,58 +248,8 @@ if(isset($_POST['Excluir'])){
             <br>
             <br>
             <br>            
-            <h1 class="m-0">Cadastrar Classes</h1>
-            <form style="width: 500px;" method="POST" enctype="multipart/form-data">
-            <br>
-            <br>
-            <br>
-                  <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Nome da Classe</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nomeClasse">
-                  </div>
-                  <br>
-                  <input type="submit" class="btn btn-primary" id="CadastrarClasse" value="Cadastrar Classe" name="CadastrarClasse"></input> 
-                  <br>              
-             </form>
-            </div>
-            <br>
-            <br>
             <div class="d-flex justify-content-center" style="padding-top: 30px;">
-             <h1 class="m-0">Alterar Produto</h1>
-            <form style="width: 500px;" method="POST" enctype="multipart/form-data">
-            <br>
-            <br>
-            <br>
-                  <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">ID do Tenis</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="idProduto">
-                  </div>
-                  <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Nome do Tenis</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nomeProduto">
-                  </div>
-                  <br>
-                  <input type="submit" class="btn btn-primary" id="Alterar" value="Alterar" name="Alterar"></input> 
-                  <br>              
-             </form>
-            </div>
-          </div>
-          </div>
-          <div class="d-flex justify-content-center" style="padding-top: 30px;">
-             <h1 class="m-0">Excluir Produto</h1>
-            <form style="width: 500px;" method="POST" enctype="multipart/form-data">
-            <br>
-            <br>
-            <br>
-                  <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">ID do Tenis</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="idProduto">
-                  </div>
-                  <br>
-                  <input type="submit" class="btn btn-primary" id="Excluir" value="Excluir" name="Excluir"></input> 
-                  <br>              
-             </form>
-            </div>
+
           
           </div><!-- /.col -->
           <div class="col-sm-6">

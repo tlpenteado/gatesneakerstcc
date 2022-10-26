@@ -1,15 +1,5 @@
 <?php
 
-session_start();
-//print_r($_SESSION);
-if ((!isset($_SESSION['email']) == true) and(!isset($_SESSION['senha']) == true )) 
-{
-    unset ($_SESSION['email']);
-    unset ($_SESSION['senha']);
-    header('Location: login.php');
-}
-$logado = $_SESSION['email'];
-
 include 'connect.php';
 
 $g="SELECT * FROM `classe` WHERE 1";
@@ -179,14 +169,40 @@ if(isset($_POST['Excluir'])){
             <a href="indexhome.php" class="nav-link">
               <i class="nav-icon fas fa-ellipsis-h"></i>
               <p>
-              <strong>Home</strong>
+              Home
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="index.php" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
-              Cadastrar Pedidos
+              <p>
+              <strong>Cadastrar Produtos</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexclass.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Cadastrar Classes</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexalt.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Alterar Produtos</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexexc.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Excluir Produtos</strong>
+              </p>
             </a>
           </li>
       </nav>
@@ -206,12 +222,31 @@ if(isset($_POST['Excluir'])){
 
             <div class="row align-items-center">
           <div class="col">
-            <div class="d-flex" style="padding-top: 30px;">
+            <div class="d-flex justify-content-center" style="padding-top: 30px;">
+                  
+            
+            
             <br>
             <br>
-            <br>            
-            <h1 class="m-0">Home</h1>        
+            
+          </div>
+          </div>
+          <div class="d-flex justify-content-center" style="padding-top: 30px;">
+             <h1 class="m-0">Excluir Produto</h1>
+            <form style="width: 500px;" method="POST" enctype="multipart/form-data">
             <br>
+            <br>
+            <br>
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">ID do Tenis</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="idProduto">
+                  </div>
+                  <br>
+                  <input type="submit" class="btn btn-primary" id="Excluir" value="Excluir" name="Excluir"></input> 
+                  <br>              
+             </form>
+            </div>
+          
           </div><!-- /.col -->
           <div class="col-sm-6">
           </div><!-- /.col -->
