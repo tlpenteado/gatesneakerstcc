@@ -1,14 +1,6 @@
 <?php
 
-session_start();
-//print_r($_SESSION);
-if ((!isset($_SESSION['email']) == true) and(!isset($_SESSION['senha']) == true )) 
-{
-    unset ($_SESSION['email']);
-    unset ($_SESSION['senha']);
-    header('Location: login.php');
-}
-$logado = $_SESSION['email'];
+
 
 include 'connect.php';
 
@@ -157,7 +149,7 @@ if(isset($_POST['Excluir'])){
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index.html" class="brand-link">
+    <a href="index.php" class="brand-link">
       <span class="brand-text font-weight-light">GATE Sneakers</span>
     </a>
 
@@ -179,14 +171,40 @@ if(isset($_POST['Excluir'])){
             <a href="indexhome.php" class="nav-link">
               <i class="nav-icon fas fa-ellipsis-h"></i>
               <p>
-              <strong>Home</strong>
+              Home
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="index.php" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
-              Cadastrar Pedidos
+              <p>
+              <strong>Cadastrar Produtos</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexclass.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Cadastrar Classes</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexalt.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Alterar Produtos</strong>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="indexexc.php" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              <strong>Excluir Produtos</strong>
+              </p>
             </a>
           </li>
       </nav>
