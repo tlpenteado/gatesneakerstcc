@@ -81,7 +81,7 @@
             <br><br>
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
             <br><br>
-            <button> <a href="indexhome.php">Voltar </a> </button>
+            <button> <a href="home.php">Voltar </a> </button>
         </form>
     </div>
 </html>
