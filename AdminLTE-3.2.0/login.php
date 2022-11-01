@@ -8,14 +8,14 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(45deg, black,grey)
+            background-image: linear-gradient(45deg,black,white)
         }
         div{
             background-color: rgba(0, 0, 0, 0.9);
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);    
             padding: 80px;
             border-radius: 15px;
             color: white;
@@ -67,10 +67,16 @@
         button:hover{
             background-color: deepskyblue;
         }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, black, grey);
+            text-align: center;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    
+<h1> Seja bem vindo ao site GateSneakers </h1>
 </body>
     <div>   
         <h1> Login </h1>
@@ -81,7 +87,8 @@
             <br><br>
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
             <br><br>
-            <button> <a href="home.php">Voltar </a> </button>
+            <button> <a href="cadastro.php">Cadastre-se </a> </button>
         </form>
     </div>
+''
 </html>

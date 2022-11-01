@@ -107,7 +107,7 @@
     </style>
 </head>
 <body>
-    <a href="home.php">Voltar</a>
+    <a href="login.php">Voltar</a>
     <div class="box">
         <form action="cadastro.php" method="POST">
             <fieldset>
